@@ -1,7 +1,6 @@
 <?php
 
-class Dashboard_admin extends CI_Controller{
-
+class Dashboard_admin extends CI_controller{
     public function index()
     {
         $this->load->view('templates_admin/header');
