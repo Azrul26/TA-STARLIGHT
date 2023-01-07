@@ -13,10 +13,17 @@ class Dashboard extends CI_Controller{
 
     public function tambah_ke_keranjang($id)
     {
+<<<<<<< HEAD
         $barang = $this->model_barang->find($id);
 
         $data = array(
             'id'      => $barang->id_barang,
+=======
+        barang = $this->model_barang->find($id);
+
+        $data = array(
+            'id'      => $barang->id_brg,
+>>>>>>> 4e2ed6420c524ccf7d5dbe64c308d94cef5ca18b
             'qty'     => 1,
             'price'   => $barang->harga,
             'name'    => $barang->nama_brg
@@ -25,6 +32,7 @@ class Dashboard extends CI_Controller{
     $this->cart->insert($data);
     redirect('dashboard');
     }
+<<<<<<< HEAD
 
     public function detail_keranjang()
     {
@@ -71,4 +79,6 @@ class Dashboard extends CI_Controller{
         $this->load->view('detail_barang',$data);
         $this->load->view('templates/footer');
     }
+=======
+>>>>>>> 4e2ed6420c524ccf7d5dbe64c308d94cef5ca18b
 }

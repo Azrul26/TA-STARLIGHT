@@ -26,7 +26,11 @@ class Model_barang extends CI_Model{
 
     public function find($id)
     {
+<<<<<<< HEAD
         $result = $this->db->where('id_barang', $id)
+=======
+        $result = $this->db->where('id_brg', $id)
+>>>>>>> 4e2ed6420c524ccf7d5dbe64c308d94cef5ca18b
                             ->limit(1)
                             ->get('tb_barang');
         if($result->num_rows() > 0){
@@ -36,6 +40,7 @@ class Model_barang extends CI_Model{
             return array();
         }
     }
+<<<<<<< HEAD
 
     public function detail_brg($id_barang)
     {
@@ -47,4 +52,6 @@ class Model_barang extends CI_Model{
             return false();
         }
     }
+=======
+>>>>>>> 4e2ed6420c524ccf7d5dbe64c308d94cef5ca18b
 }
