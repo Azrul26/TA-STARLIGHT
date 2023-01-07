@@ -23,9 +23,14 @@
             <span class="badge badge-pill badge-success mb-3">Rp.
             <?php echo  number_format($brg->harga, 0, ',', '.') ?></span>
             <?php echo anchor('dashboard/tambah_ke_keranjang/'.$brg
+<<<<<<< HEAD
               ->id_barang,'<div class="btn btn-sm btn-primary">Tambah ke Keranjang</div>') ?>
             <?php echo anchor('dashboard/detail/'.$brg
               ->id_barang,'<div class="btn btn-sm btn-success">Detail</div>') ?>
+=======
+              ->id_brg,'<div class="btn btn-sm btn-primary">Tambah ke Keranjang</div>') ?>
+            <a href="#" class="btn btn-sm btn-success">Detail</a>
+>>>>>>> 379933db6d5be427c2cc13c27fbe725a06d5a37c
             </div>
         </div>
 

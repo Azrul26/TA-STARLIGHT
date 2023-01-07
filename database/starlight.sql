@@ -2,10 +2,17 @@
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
+<<<<<<< HEAD
 -- Host: 127.0.0.1:3307
 -- Generation Time: Jan 05, 2023 at 06:28 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 7.4.33
+=======
+-- Host: 127.0.0.1
+-- Waktu pembuatan: 28 Des 2022 pada 10.27
+-- Versi server: 10.4.22-MariaDB
+-- Versi PHP: 7.4.28
+>>>>>>> 379933db6d5be427c2cc13c27fbe725a06d5a37c
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;

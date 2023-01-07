@@ -12,7 +12,11 @@
 
         <?php
         $no=1;
+<<<<<<< HEAD
         foreach ($this->cart->contents() as $items) : ?>
+=======
+        foreach ($this->cart->cotents() as $items) : ?>
+>>>>>>> 379933db6d5be427c2cc13c27fbe725a06d5a37c
 
         </tr>
             <td><?php echo $no++ ?></td>
@@ -36,6 +40,10 @@
             <a href="<?php echo base_url('dashboard/index') ?>"><div
             class="btn btn-sm btn-primary">Lanjutkan Belanja</div></a>
             <a href="<?php echo base_url('dashboard/pembayaran') ?>"><div
+<<<<<<< HEAD
             class="btn btn-sm btn-success">Pembayaran</div></a>
+=======
+            class="btn btn-sm success">Pembayaran</div></a>
+>>>>>>> 379933db6d5be427c2cc13c27fbe725a06d5a37c
     </div>
 </div>   
