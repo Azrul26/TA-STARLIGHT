@@ -26,12 +26,12 @@
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="<?php echo base_url('kategori/makanan') ?>">
                     <i class="fas fa-fw fa-cookie"></i>
                     <span>Makanan</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="<?php echo base_url('kategori/minuman') ?>">
                     <i class="fas fa-fw fa-solid fa-coffee"></i>
                     <span>Minuman</span></a>
             </li>
