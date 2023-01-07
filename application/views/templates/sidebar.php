@@ -7,7 +7,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url('dashboard') ?>">
                 <div class="sidebar-brand-icon">
                 <i class="fas fa-fw fa-store"></i>
                 </div>
@@ -19,7 +19,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="<?php echo base_url('dashboard') ?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -102,6 +102,19 @@
                                 </form>
                             </div>
                         </li>
+
+                        <div class="navbar">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <?php
+                                    $keranjang = 'keranjang belanja: '.$this->cart->total_items
+                                    (). 'items'
+                                    ?>
+                                    
+                                    <?php echo anchor('dashboard/detail_keranjang', $keranjang) ?>                                  
+                                </li>
+                            </ul>
+                        </div>
 
                         <div class="topbar-divider d-none d-sm-block"></div>
 

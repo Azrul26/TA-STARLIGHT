@@ -7,7 +7,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url('admin/dashboard_admin') ?>">
                 <div class="sidebar-brand-icon">
                 <i class="fas fa-fw fa-store"></i>
                 </div>
@@ -31,9 +31,9 @@
                     <span>Data Barang</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('admin/invoices') ?>">
+                <a class="nav-link" href="<?php echo base_url('admin/invoice') ?>">
                     <i class="fas fa-fw fa-file-invoice"></i>
-                    <span>Invoices</span></a>
+                    <span>Invoice</span></a>
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
