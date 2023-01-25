@@ -19,7 +19,7 @@
         <h3> Input Alamat Pengiriman dan Pembayaran</h3>
 
         <form method="post" action="<?php echo base_url() ?>dashboard/proses_pesanan">
-
+        <input type="hidden" name="<?= $this->security->get_csrf_token_name() ?>" value="<?= $this->security->get_csrf_hash() ?>"/>
             <div class="form-group">
                 <label> Nama Lengkap </label>
                 <input type="text" name="nama" placeholder="Nama Lengkap Anda" class="form-control">
