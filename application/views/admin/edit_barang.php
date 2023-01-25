@@ -4,6 +4,7 @@
     <?php foreach($barang as $brg) : ?>
 
         <form method="post" action="<?php echo base_url(). 'admin/data_barang/update' ?>">
+        <input type="hidden" name="<?= $this->security->get_csrf_token_name() ?>" value="<?= $this->security->get_csrf_hash() ?>"/>
 
         <div class="for-group">
             <label>Nama Barang</label>

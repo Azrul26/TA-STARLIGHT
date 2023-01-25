@@ -1,5 +1,6 @@
 <div class="container-fluid">
     <h4>Keranjang Belanja </h4>
+    <input type="hidden" name="<?= $this->security->get_csrf_token_name() ?>" value="<?= $this->security->get_csrf_hash() ?>"/>
 
     <table class="table table-bordered table-striped table-hover">
         <tr>
@@ -33,7 +34,7 @@
     <div align="right">
             <a href="<?php echo base_url('dashboard/hapus_keranjang') ?>"><div
             class="btn btn-sm btn-danger">Hapus Keranjang</div></a>
-            <a href="<?php echo base_url('dashboard/index') ?>"><div
+            <a href="<?php echo base_url('welcome') ?>"><div
             class="btn btn-sm btn-primary">Lanjutkan Belanja</div></a>
             <a href="<?php echo base_url('dashboard/pembayaran') ?>"><div
             class="btn btn-sm btn-success">Pembayaran</div></a>

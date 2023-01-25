@@ -43,7 +43,7 @@
       </div>
       <div class="modal-body">
         <form action="<?php echo base_url(). 'admin/data_barang/tambah_aksi'; ?>" method="post" enctype="multipart/form-data" >
-
+        <input type="hidden" name="<?= $this->security->get_csrf_token_name() ?>" value="<?= $this->security->get_csrf_hash() ?>"/>
         <div class="form-group">
             <label>Nama Barang</label>
             <input type="text" name="nama_brg" class="form-control">
